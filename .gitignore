@@ -1,0 +1,5 @@
+node_modules
+dist
+# исходные скриншоты, на сайт идут только webp из public/
+raw
+BRIEF.md

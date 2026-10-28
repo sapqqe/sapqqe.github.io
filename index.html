@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sapqqe — лендинги и сайты для игр</title>
+    <meta name="description" content="Портфолио sapqqe: делаю лендинги и сайты для игр. Пишите в Telegram @sapqqe." />
+    <meta name="theme-color" content="#2a35ee" />
+    <meta property="og:title" content="sapqqe — лендинги и сайты для игр" />
+    <meta property="og:description" content="Лендинги, которые не пролистывают. Работы и контакты." />
+    <meta property="og:image" content="/work/party-cleanup/hero-1200.webp" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#work">Перейти к работам</a>
+
+    <!-- Плавающая панель: появляется, когда первый экран ушёл вверх -->
+    <div class="dock" aria-hidden="true">
+      <a class="dock__logo" href="#top" tabindex="-1">sapqqe</a>
+      <a class="dock__cta" href="https://t.me/sapqqe" target="_blank" rel="noopener" tabindex="-1">Написать в Telegram</a>
+    </div>
+
+    <main>
+      <!-- 1. Первый экран -->
+      <section class="sheet sheet--cobalt hero" id="top">
+        <header class="hero__bar">
+          <a class="logo" href="#top">sapqqe</a>
+          <nav class="hero__nav" aria-label="Разделы">
+            <a class="pill" href="#work">Работы</a>
+            <a class="pill" href="#contact">Контакты</a>
+            <a class="pill pill--solid" href="https://t.me/sapqqe" target="_blank" rel="noopener">Написать в Telegram</a>
+          </nav>
+        </header>
+
+        <h1 class="hero__title">
+          <span class="line"><span>Лендинги,</span></span>
+          <span class="line line--r"><span>которые не</span></span>
+          <span class="line"><span>пролистывают.</span></span>
+        </h1>
+
+        <div class="hero__about">
+          <p class="status"><i aria-hidden="true"></i>Беру заказы</p>
+          <p>Лендинг — первое, что люди видят о вашем проекте. Делаю так, чтобы его дочитывали до кнопки.</p>
+        </div>
+
+        <!-- Лента одинаковых сайтов в телефоне; ленту заполняет main.js -->
+        <div class="phone-wrap" aria-hidden="true">
+          <div class="phone"><div class="phone__screen"><div class="feed"></div></div></div>
+          <div class="phone__stop">А тут остановились</div>
+        </div>
+      </section>
+
+      <!-- 2. Работы: карточки собирает main.js из src/works.js -->
+      <section class="sheet sheet--ink work" id="work" aria-labelledby="work-title">
+        <h2 class="h-big" id="work-title">Работы<sup class="work__count"></sup></h2>
+        <ul class="works"></ul>
+      </section>
+
+      <!-- 3. Процесс -->
+      <section class="sheet sheet--blush process" aria-labelledby="process-title">
+        <h2 class="h-big" id="process-title">Как я делаю сайт</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <h3>Разговор</h3>
+            <p>Обсуждаем, что за проект, для кого он и каким должен ощущаться. Смотрим сайты, которые вам нравятся и не нравятся.</p>
+          </li>
+          <li class="step step--variants">
+            <span class="step__n">2</span>
+            <h3>Три первых экрана</h3>
+            <p>Показываю три разных варианта: шрифты, цвет, движение. Вы выбираете один, дальше строим на нём.</p>
+            <div class="fan" aria-label="Три варианта первого экрана, которые я делал для Party Cleanup!">
+              <img src="/work/party-cleanup/variant-b.webp" width="720" height="450" loading="lazy" alt="Вариант с комиксом" />
+              <img src="/work/party-cleanup/variant-c.webp" width="720" height="450" loading="lazy" alt="Вариант в виде журнала" />
+              <img src="/work/party-cleanup/variant-a.webp" width="720" height="450" loading="lazy" alt="Вариант «Бардак», его и выбрали" />
+            </div>
+            <p class="fan__cap">Настоящие варианты для Party Cleanup! Выбрали «Бардак», он сверху.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <h3>Вёрстка и движение</h3>
+            <p>Собираю сайт целиком: анимации, плавная прокрутка, версия для телефона.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <h3>Проверка и запуск</h3>
+            <p>Проверяю на компьютере и телефоне, исправляю мелочи и выкладываю сайт в интернет.</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 4. Контакт -->
+      <section class="sheet sheet--cobalt contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="contact__q" id="contact-title">Нужен сайт? Напишите в Telegram</h2>
+        <a class="contact__tg" href="https://t.me/sapqqe" target="_blank" rel="noopener" aria-label="Telegram @sapqqe"><span aria-hidden="true">@sapqqe</span></a>
+
+        <div class="contact__mail">
+          <p>Или на почту. Что нужно сделать?</p>
+          <div class="chips" role="radiogroup" aria-label="Тема письма">
+            <button class="chip is-on" role="radio" aria-checked="true" data-subject="Лендинг">Лендинг</button>
+            <button class="chip" role="radio" aria-checked="false" data-subject="Сайт для игры">Сайт для игры</button>
+            <button class="chip" role="radio" aria-checked="false" data-subject="Сайт-визитка">Сайт-визитка</button>
+            <button class="chip" role="radio" aria-checked="false" data-subject="Другое">Другое</button>
+          </div>
+          <a class="mail" href="mailto:s3368406@gmail.com?subject=%D0%9B%D0%B5%D0%BD%D0%B4%D0%B8%D0%BD%D0%B3">s3368406@gmail.com</a>
+        </div>
+
+        <!-- Наклейки с тем, что я делаю: их можно хватать и бросать (main.js).
+             data-x/y — стартовое место в зоне на компьютере, data-mx/my — на телефоне -->
+        <div class="stickers">
+          <ul class="stickers__list" aria-label="Что я делаю">
+            <li class="st st--blush" data-x=".06" data-y=".10" data-r="-8" data-mx=".02" data-my=".02">Лендинги</li>
+            <li class="st st--ink" data-x=".44" data-y=".00" data-r="6" data-mx=".30" data-my=".20">Сайты для игр</li>
+            <li class="st st--yellow" data-x=".04" data-y=".54" data-r="4" data-mx=".04" data-my=".40">Анимации</li>
+            <li class="st st--concrete" data-x=".50" data-y=".34" data-r="-5" data-mx=".22" data-my=".58">Версия для телефона</li>
+            <li class="st st--white" data-x=".40" data-y=".70" data-r="-3" data-mx=".04" data-my=".77">Публикация в интернете</li>
+          </ul>
+          <p class="stickers__hint" aria-hidden="true">Наклейки можно хватать и бросать</p>
+        </div>
+
+        <footer class="foot">
+          <span>© 2026 sapqqe</span>
+          <a href="#top">Наверх</a>
+        </footer>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
